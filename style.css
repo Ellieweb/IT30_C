@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Background */
+body {
+    background: radial-gradient(circle at center, lch(31.81% 39.87 149.19) 0%, #086332 70%, #054823 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Header Text Above Card */
+.system-header {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.institution-name {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    opacity: 0.95;
+    margin-bottom: 4px;
+}
+
+.system-title {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* White Center Card */
+.card-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 410px;
+    padding: 40px 30px 35px 30px;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form Layout */
+.auth-form {
+    width: 100%;
+    display: none;
+}
+
+.auth-form.active {
+    display: block;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13.5px;
+    color: #6c757d;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 11px 13px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    color: #333333;
+}
+
+.input-group input:focus {
+    border-color: #0b7b3e;
+    box-shadow: 0 0 0 3px rgba(11, 123, 62, 0.2);
+}
+
+.input-group input::placeholder {
+    color: #adb5bd;
+}
+
+/* Primary Green Action Buttons */
+.univ-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0b7b3e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 10px rgba(11, 123, 62, 0.3);
+}
+
+.univ-btn:hover {
+    background-color: #086332;
+    box-shadow: 0 5px 12px rgba(8, 99, 50, 0.4);
+}
+
+.univ-btn.reg-btn {
+    background-color: #0b7b3e;
+}
+
+.univ-btn.reg-btn:hover {
+    background-color: #064b26;
+}
+
+/* Toggle Link Text */
+.switch-prompt {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 13px;
+    color: #6c757d;
+}
+
+.switch-prompt a {
+    color: #0b7b3e;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.switch-prompt a:hover {
+    text-decoration: underline;
+    color: #064b26;
+}
